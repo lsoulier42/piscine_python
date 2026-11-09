@@ -3,35 +3,85 @@
 | Champ | Valeur |
 | --- | --- |
 | Fichier à rendre | `cart.py` |
-| Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
+| Fonction à écrire | `summarize_cart(items: list[dict]) -> dict` |
+| Version | Python 3.15 |
 | Dépendances | Bibliothèque standard uniquement |
+
+## Contexte
+
+Tu développes une fonction de synthèse pour le panier d'une boutique en ligne. Le panier est une liste de dictionnaires : chaque dictionnaire représente une ligne de commande.
+
+Chaque ligne possède trois champs :
+
+- `sku` (`str`) : référence d'un produit, abréviation de *Stock Keeping Unit*. Par exemple, `"TSHIRT-RED-M"` désigne un tee-shirt rouge de taille M. Deux lignes ayant le même SKU concernent le même produit.
+- `quantity` (`int`) : nombre d'unités commandées sur cette ligne, strictement positif.
+- `unit_price` (`int`) : prix d'une seule unité, exprimé **en centimes**, positif ou nul.
+
+Le prix d'une ligne est `quantity * unit_price`. Pas besoin de convertir en euros ou d'utiliser des flottants.
 
 ## Objectif
 
-`summarize_cart(items: list[dict]) -> dict` : chaque item a sku, quantity > 0, unit_price >= 0 ; résultat `{'total_cents': ..., 'quantities': {sku: quantité cumulée}}` ; vide -> 0, {}.
+Écris `summarize_cart(items: list[dict]) -> dict`.
+
+La fonction doit retourner un dictionnaire contenant :
+
+- `total_cents` : montant total du panier en centimes, toutes lignes confondues ;
+- `quantities` : dictionnaire associant chaque référence produit (SKU) à la quantité totale commandée. Plusieurs lignes portant le même SKU doivent avoir leurs quantités additionnées.
+
+### Exemple
+
+Entrée :
+
+```python
+items = [
+    {"sku": "TSHIRT-RED-M", "quantity": 2, "unit_price": 1500},
+    {"sku": "MUG-BLUE", "quantity": 1, "unit_price": 800},
+    {"sku": "TSHIRT-RED-M", "quantity": 3, "unit_price": 1500},
+]
+```
+
+Résultat attendu :
+
+```python
+{
+    "total_cents": 8300,
+    "quantities": {
+        "TSHIRT-RED-M": 5,
+        "MUG-BLUE": 1,
+    },
+}
+```
+
+Le montant total additionne toutes les lignes ; les quantités sont regroupées par référence.
+
+Pour un panier vide (`[]`), retourner :
+
+```python
+{"total_cents": 0, "quantities": {}}
+```
 
 ## Contraintes
 
-- Ne pas modifier les arguments fournis, sauf demande explicite.
-- Respecter les signatures, sorties et exceptions demandées.
-- Éviter les bibliothèques tierces.
+- Ne pas modifier la liste `items` ni les dictionnaires d'entrée.
+- Bibliothèque standard uniquement.
+- On suppose que les lignes respectent les types et contraintes indiqués : pas de validation supplémentaire demandée.
+- Si un SKU apparaît plusieurs fois avec des prix unitaires différents, calculer le montant de chaque ligne séparément avant d'additionner ; ne regrouper que les quantités.
 
-## Méthode
+## Pistes (sans solution)
 
-1. Identifier ce que tu sais déjà faire en PHP.
-2. Trouver l'équivalent Python dans la documentation officielle.
-3. Implémenter l'exercice sans copier une solution complète.
-4. Tester le cas normal, le cas vide et les entrées invalides pertinentes.
+- Un dictionnaire est pratique pour regrouper des valeurs par référence.
+- Réutilise ce que tu as appris dans `word_counts()` et `merge_stock()`.
+- Teste des lignes répétées, des références différentes et le panier vide.
 
 ## Bonus facultatif
 
-Écrire au moins deux tests supplémentaires qui couvrent des cas limites.
+Écrire au moins deux tests supplémentaires couvrant des cas limites.
 
 ## Autoévaluation
 
-- [ ] J'obtiens le résultat demandé.
-- [ ] J'ai testé les cas limites.
-- [ ] Je peux expliquer mon code.
-- [ ] J'ai consulté la documentation Python.
+- [ ] Le total est correct en centimes.
+- [ ] Les quantités de références identiques sont additionnées.
+- [ ] Le panier vide fonctionne.
+- [ ] Les données d'entrée restent inchangées.
 
 Documentation : https://docs.python.org/3.15/
