@@ -8,7 +8,37 @@
 
 ## Objectif
 
-`parse_positive_int(text: str) -> int` : accepter blancs extérieurs et signe + ; refuser négatifs, décimaux et vide avec ValueError.
+Implémenter `parse_positive_int(text: str) -> int`, qui convertit une chaîne représentant un entier positif ou nul en `int`.
+
+## Entrées acceptées
+
+- Les chiffres ASCII de `0` à `9` (au moins un chiffre).
+- Les espaces en début et en fin de chaîne.
+- Un signe `+` facultatif, placé avant les chiffres (après les éventuels espaces initiaux).
+- La valeur zéro.
+
+## Entrées refusées
+
+Lever `ValueError` pour :
+
+- Les nombres négatifs (signe `-`).
+- Les nombres à partie fractionnaire, comme `3.14` ou `3,14`.
+- Les chaînes vides ou composées uniquement d'espaces.
+- Tout autre caractère non autorisé, y compris les espaces entre les chiffres.
+
+## Exemples
+
+| Entrée | Résultat attendu |
+| --- | --- |
+| `"42"` | `42` |
+| `"  +42  "` | `42` |
+| `"0"` | `0` |
+| `"-42"` | `ValueError` |
+| `"3.14"` | `ValueError` |
+| `""` | `ValueError` |
+| `"   "` | `ValueError` |
+| `"12 3"` | `ValueError` |
+| `"+"` | `ValueError` |
 
 ## Contraintes
 
