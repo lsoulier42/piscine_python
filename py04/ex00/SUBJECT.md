@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Dans une application, un utilisateur possède plusieurs informations qui vont ensemble : son identifiant, son adresse e-mail et son état actif ou non. Tu vas représenter cet utilisateur par une petite entité Python, pour manipuler ces données comme un seul objet.
+
 ## Objectif
 
 Créer une `@dataclass User` avec id:int, email:str et active:bool=True ; égalité par valeur.
