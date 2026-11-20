@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Imagine une application qui affiche plusieurs centaines de produits ou d'utilisateurs. Plutôt que de tout afficher simultanément, on souhaite présenter les résultats par groupes de taille fixe, avec un système de pagination. Tu vas créer une fonction permettant de récupérer uniquement les éléments correspondant à une page donnée.
+
 ## Objectif
 
 `paginate(items: list, page: int, per_page: int) -> list` ; pages commencent à 1, ValueError si page/per_page <= 0 ; hors bornes -> [] ; ne pas muter.
