@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Lorsqu'une API reçoit des informations pour créer un compte utilisateur, elle ne peut pas supposer que les données envoyées sont valides. Certains champs peuvent manquer, contenir des valeurs incorrectes ou avoir un type inattendu. Tu vas développer une fonction qui vérifie les informations essentielles d'un utilisateur et retourne des données normalisées, prêtes à être utilisées par l'application.
+
 ## Objectif
 
 `validate_user(data: dict) -> dict` ; email str avec exactement un @ et texte des deux côtés, trim + lower ; âge int >= 18 (bool exclu) ; renvoyer uniquement email et age ; ValueError sur données invalides.
