@@ -12,7 +12,7 @@ Dans un blog ou un catalogue, on transforme souvent un titre lisible en identifi
 
 ## Objectif
 
-Écrire `slugify(text: str) -> str` : strip, minuscules, remplacer chaque suite d'espaces par `-`, préserver les accents.
+Implémente `slugify(text: str) -> str`. La fonction reçoit un texte et retourne une version adaptée à un identifiant : retire les espaces au début et à la fin, passe les lettres en minuscules et remplace chaque groupe d'espaces internes par un seul tiret (`-`). Conserve les caractères accentués.
 
 ## Contraintes
 
