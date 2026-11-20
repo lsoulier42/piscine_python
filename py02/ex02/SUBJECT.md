@@ -12,7 +12,9 @@ Imagine une application qui affiche plusieurs centaines de produits ou d'utilisa
 
 ## Objectif
 
-`paginate(items: list, page: int, per_page: int) -> list` ; pages commencent à 1, ValueError si page/per_page <= 0 ; hors bornes -> [] ; ne pas muter.
+Implémente `paginate(items: list, page: int, per_page: int) -> list`. La fonction reçoit une liste, le numéro de la page demandée et le nombre d'éléments à afficher par page. Elle doit retourner uniquement les éléments de cette page, sans modifier la liste originale. La première page porte le numéro `1`. Si la page demandée dépasse les éléments disponibles, retourne une liste vide. Si `page` ou `per_page` est inférieur ou égal à zéro, lève `ValueError`.
+
+Par exemple, `paginate([10, 20, 30, 40, 50], 2, 2)` doit retourner `[30, 40]`.
 
 ## Contraintes
 
