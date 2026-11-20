@@ -12,7 +12,7 @@ Une application peut devoir traiter une longue liste de résultats par petits gr
 
 ## Objectif
 
-`chunks(items: list, size: int)` : générateur de listes de taille <= size, size <= 0 -> ValueError, sans construire tous les groupes.
+Implémente `chunks(items: list, size: int)` sous la forme d'un générateur. Il doit fournir successivement des sous-listes de `items`, contenant au maximum `size` éléments chacune, jusqu'à épuisement de la liste. Ne construis pas à l'avance la liste complète des groupes. Si `size` est inférieur ou égal à `0`, lève `ValueError`.
 
 ## Contraintes
 
