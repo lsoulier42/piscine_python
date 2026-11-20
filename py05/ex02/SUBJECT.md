@@ -12,7 +12,7 @@ Pendant le débogage ou l'observation d'une application, il peut être utile de 
 
 ## Objectif
 
-Créer `@count_calls` : attribut `.calls` initialisé à 0 et incrémenté à chaque appel, valeur de retour et nom de fonction préservés.
+Crée un décorateur `@count_calls` qui permet de connaître le nombre d'appels d'une fonction. Une fois décorée, la fonction doit disposer d'un attribut `.calls`, initialisé à `0` et incrémenté à chaque appel. Le décorateur ne doit pas changer la valeur retournée par la fonction ni son nom.
 
 ## Contraintes
 
