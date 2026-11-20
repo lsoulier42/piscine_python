@@ -12,7 +12,13 @@ Lorsqu'une API reçoit des informations pour créer un compte utilisateur, elle 
 
 ## Objectif
 
-`validate_user(data: dict) -> dict` ; email str avec exactement un @ et texte des deux côtés, trim + lower ; âge int >= 18 (bool exclu) ; renvoyer uniquement email et age ; ValueError sur données invalides.
+Implémente `validate_user(data: dict) -> dict`. La fonction reçoit un dictionnaire contenant les informations d'un utilisateur, par exemple `{'email': ' Alice@Example.com ', 'age': 24}`. Elle doit vérifier les champs `email` et `age`, puis retourner un nouveau dictionnaire ne contenant que ces deux informations.
+
+- **E-mail** : la valeur doit être une chaîne (`str`) contenant exactement un caractère `@`, avec au moins un caractère avant et après. Retire les espaces en début et en fin de chaîne, puis convertis l'adresse en minuscules.
+- **Âge** : la valeur doit être un entier (`int`) supérieur ou égal à `18`. Attention : en Python, `bool` est une sous-classe de `int`, mais les booléens doivent être refusés ici.
+- **Données invalides** : si un champ est manquant ou ne respecte pas ces règles, lève `ValueError`.
+
+Par exemple, `validate_user({'email': ' Alice@Example.com ', 'age': 24, 'admin': True})` doit retourner `{'email': 'alice@example.com', 'age': 24}`. Le champ `admin` ne doit pas figurer dans le résultat.
 
 ## Contraintes
 
