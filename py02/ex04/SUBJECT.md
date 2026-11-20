@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Tu viens de développer une fonction de validation des utilisateurs. Comment vérifier qu'elle fonctionne correctement, y compris lorsque l'application reçoit des données incorrectes ? Plutôt que de lancer manuellement la fonction avec différentes valeurs, tu vas écrire une série de tests automatisés qui contrôleront son comportement et permettront de détecter d'éventuelles régressions.
+
 ## Objectif
 
 Créer au moins 8 tests unittest pour `validate_user` : nominal, espaces, clés manquantes, bool, minorité, email sans/double @, mauvais types.
