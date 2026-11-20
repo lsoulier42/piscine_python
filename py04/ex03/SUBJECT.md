@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Après avoir créé une entité `User`, tu veux pouvoir gérer plusieurs utilisateurs sans mélanger le reste de l'application avec les détails du stockage. Tu vas créer un petit repository en mémoire permettant d'ajouter, consulter, lister et supprimer des utilisateurs.
+
 ## Objectif
 
 Créer `UserRepository` avec add, get(id) -> User | None, all() -> list[User], delete(id) -> bool ; doublons ValueError ; ordre d'insertion.
