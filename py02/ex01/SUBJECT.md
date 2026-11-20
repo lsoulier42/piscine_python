@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Dans une application web, on a régulièrement besoin de construire des URL contenant des paramètres, par exemple pour effectuer une recherche, appliquer des filtres ou naviguer entre plusieurs pages de résultats. Tu vas créer une fonction qui prend une adresse de départ et un ensemble de paramètres, puis construit l'URL complète en les ajoutant correctement.
+
 ## Objectif
 
 `make_url(base: str, **params: str) -> str` : encoder via urllib.parse.urlencode, ordre d'entrée, ? ou & selon base ; sans paramètre renvoyer base.
