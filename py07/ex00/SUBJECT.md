@@ -12,7 +12,17 @@ Tu travailles sur un export de ventes provenant d'une application métier. Le fi
 
 ## Objectif
 
-CLI `python etl.py INPUT_CSV OUTPUT_JSON` : CSV date/customer/amount_cents/status, ignorer status != paid, refuser montants invalides ou négatifs, agréger par client, trier, JSON customers + grand_total_cents ; pas de sortie si erreur, stderr/code non nul ; cinq tests et README.
+Crée un programme en ligne de commande utilisable avec `python etl.py INPUT_CSV OUTPUT_JSON`. Il reçoit un fichier CSV comportant les colonnes `date`, `customer`, `amount_cents` et `status`, puis produit un bilan des ventes payées au format JSON.
+
+Le programme doit :
+
+1. Lire les transactions du CSV et ignorer celles dont le statut n'est pas `paid`.
+2. Refuser les montants invalides ou négatifs.
+3. Additionner les montants payés par client et trier les résultats.
+4. Écrire un fichier JSON contenant les données `customers` et le total général `grand_total_cents`.
+5. Ne pas produire de fichier de sortie en cas d'erreur ; signaler celle-ci sur `stderr` et terminer avec un code non nul.
+
+Accompagne le programme d'au moins cinq tests et d'un `README` expliquant son utilisation.
 
 ## Contraintes
 
