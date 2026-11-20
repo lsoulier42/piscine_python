@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Dans une liste d'étiquettes ou de noms, certaines valeurs peuvent apparaître plusieurs fois. Tu veux éliminer ces répétitions tout en conservant l'ordre dans lequel chaque valeur a été rencontrée pour la première fois.
+
 ## Objectif
 
 `unique_in_order(items: list[str]) -> list[str]` : dédoublonner en conservant l'ordre de première apparition.
