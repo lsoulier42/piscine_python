@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Une application démarre avec des paramètres par défaut, mais certains peuvent être personnalisés dans un fichier JSON. Tu vas charger ce fichier et produire la configuration finale : les valeurs du fichier prennent le dessus, tandis que les paramètres absents gardent leur valeur par défaut.
+
 ## Objectif
 
 `load_config(path: str, defaults: dict) -> dict` : charger objet JSON, fusion superficielle avec valeurs JSON prioritaires, defaults inchangé, ValueError si racine non objet.
