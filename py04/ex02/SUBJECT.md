@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Une application manipule des objets `User` en mémoire, mais doit parfois transmettre ou enregistrer leurs données sous forme de dictionnaires. Tu vas écrire les conversions dans les deux sens, pour passer d'une représentation objet à une représentation de données et inversement.
+
 ## Objectif
 
 Créer `user_to_dict(user: User) -> dict` et `user_from_dict(payload: dict) -> User` ; champs inconnus ignorés, entrée inchangée, ValueError si types invalides.
