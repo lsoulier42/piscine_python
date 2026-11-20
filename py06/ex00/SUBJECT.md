@@ -6,6 +6,10 @@
 | Version | Python 3.15 |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Une boutique reçoit des lignes de commande contenant une référence produit, une quantité et un prix unitaire en centimes. Tu vas calculer le montant total tout en décrivant précisément les types attendus, afin de rendre les erreurs de manipulation plus faciles à repérer.
+
 ## Objectif
 
 `total_order(lines: list[tuple[str,int,int]]) -> int` : tuples sku, quantité > 0, prix unitaire >= 0 en centimes ; ValueError sinon, annotations complètes.
