@@ -6,6 +6,10 @@
 | Version | Python 3.15 |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Dans une configuration, une clé absente ne signifie pas la même chose qu'une clé présente dont la valeur est `None`. Tu vas créer un accès aux paramètres capable de distinguer ces situations, même lorsqu'aucune valeur par défaut n'a été fournie.
+
 ## Objectif
 
 Créer MISSING avec `sentinel` (Python 3.15), `get_setting(mapping: dict, key: str, default=MISSING)` ; valeur même None si clé présente, défaut si absent et fourni, sinon KeyError.
