@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Un outil de documentation ou d'analyse peut avoir besoin d'afficher quelques statistiques sur un fichier texte, comme son nombre de lignes, de mots et de caractères. Tu vas écrire une fonction qui ouvre un fichier et renvoie ces trois informations.
+
 ## Objectif
 
 `line_stats(path: str) -> dict[str,int]` : lire UTF-8 ; clés lines = len(splitlines()), words = len(split()), characters = len(text), sauts inclus.
