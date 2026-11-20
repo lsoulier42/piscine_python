@@ -12,7 +12,7 @@ Quand on traite de nombreux enregistrements utilisateurs, on ne veut pas forcém
 
 ## Objectif
 
-`process_records(records)` : générateur sur dictionnaires name/active ; produire noms normalisés non vides des actifs, sans liste complète.
+Implémente `process_records(records)` sous forme de générateur. La fonction reçoit des dictionnaires représentant des utilisateurs, contenant notamment les champs `name` et `active`. Elle doit produire progressivement les noms normalisés, non vides, des utilisateurs actifs, en ignorant les autres enregistrements. Ne construis pas de liste complète des résultats.
 
 ## Contraintes
 
