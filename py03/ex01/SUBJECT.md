@@ -12,7 +12,7 @@ Une application démarre avec des paramètres par défaut, mais certains peuvent
 
 ## Objectif
 
-`load_config(path: str, defaults: dict) -> dict` : charger objet JSON, fusion superficielle avec valeurs JSON prioritaires, defaults inchangé, ValueError si racine non objet.
+Implémente `load_config(path: str, defaults: dict) -> dict`. La fonction lit un fichier JSON de configuration et le combine avec le dictionnaire `defaults`. Elle doit retourner un nouveau dictionnaire contenant les valeurs par défaut, mais les remplacer par celles du fichier JSON lorsque les mêmes clés y figurent. La fusion se fait uniquement au premier niveau : ne fusionne pas récursivement les dictionnaires imbriqués. Ne modifie pas `defaults`. Si la racine du JSON n'est pas un objet, lève `ValueError`.
 
 ## Contraintes
 
