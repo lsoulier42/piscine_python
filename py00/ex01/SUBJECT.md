@@ -12,7 +12,7 @@ Un programme lancé depuis un terminal peut recevoir des informations après son
 
 ## Objectif
 
-Afficher chaque argument CLI au format `index: valeur`, dès 0 ; aucun argument : `No arguments`.
+Écris un programme qui affiche les arguments transmis lors de son lancement dans le terminal. Pour chaque argument, affiche une ligne au format `index: valeur`, en commençant les indices à `0` et sans compter le nom du script. Si aucun argument n'est fourni, affiche `No arguments`.
 
 ## Contraintes
 
