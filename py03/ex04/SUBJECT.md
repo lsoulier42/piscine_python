@@ -12,7 +12,7 @@ Le convertisseur CSV vers JSON de l'exercice précédent fonctionne comme une fo
 
 ## Objectif
 
-`python cli.py INPUT OUTPUT` : convertir CSV->JSON via ex02, imprimer `Exported N rows`, code 0 ; erreurs en stderr et code non nul.
+Écris un programme `cli.py` exécutable depuis un terminal avec la commande `python cli.py INPUT OUTPUT`. Il doit lire le CSV situé à `INPUT` et produire un fichier JSON à `OUTPUT` en réutilisant la conversion de `ex02`. En cas de succès, affiche `Exported N rows` (où `N` est le nombre de lignes exportées) et termine avec le code de sortie `0`. En cas d'erreur, affiche un message sur la sortie d'erreur (`stderr`) et termine avec un code non nul.
 
 ## Contraintes
 
