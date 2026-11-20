@@ -12,7 +12,7 @@ Pour analyser un message ou un commentaire, on peut commencer par compter combie
 
 ## Objectif
 
-`word_counts(text: str) -> dict[str, int]` : séparer les espaces, ignorer les mots vides et la casse ; garder la ponctuation.
+Implémente `word_counts(text: str) -> dict[str, int]`. La fonction doit compter le nombre d'occurrences de chaque mot dans un texte et retourner un dictionnaire associant chaque mot à son nombre d'apparitions. Sépare les mots par les espaces, ignore les éléments vides et considère les majuscules et minuscules comme équivalentes. En revanche, conserve la ponctuation dans les mots.
 
 ## Contraintes
 
