@@ -12,7 +12,7 @@ Tu découvres un nouveau langage et tu veux vérifier que ton environnement exé
 
 ## Objectif
 
-Afficher exactement deux lignes : `Hello, Python!` et `PHP -> Python`.
+Écris un programme qui affiche deux messages dans le terminal. La première ligne doit être exactement `Hello, Python!` et la deuxième exactement `PHP -> Python`.
 
 ## Contraintes
 
