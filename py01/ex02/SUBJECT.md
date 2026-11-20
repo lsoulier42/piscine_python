@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Un magasin possède deux inventaires, par exemple ceux de deux entrepôts. Chaque inventaire associe une référence produit à une quantité disponible. Tu vas créer un inventaire consolidé en additionnant les quantités des mêmes références, sans toucher aux données initiales.
+
 ## Objectif
 
 `merge_stock(a: dict[str,int], b: dict[str,int]) -> dict[str,int]` : additionner par référence, conserver les zéros, ne pas muter a ou b.
