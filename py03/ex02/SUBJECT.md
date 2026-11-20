@@ -12,7 +12,7 @@ Un service reçoit des données sous forme de tableau CSV, alors qu'une autre ap
 
 ## Objectif
 
-`csv_to_json(csv_path: str, json_path: str) -> int` : csv.DictReader, tableau d'objets JSON UTF-8 ensure_ascii=False indent=2, renvoyer nombre de lignes.
+Implémente `csv_to_json(csv_path: str, json_path: str) -> int`. Lis le fichier CSV indiqué par `csv_path` et transforme chaque ligne en dictionnaire en utilisant les noms de colonnes comme clés (`csv.DictReader`). Écris ensuite la liste de ces dictionnaires dans le fichier `json_path`, en JSON UTF-8, avec `ensure_ascii=False` et une indentation de deux espaces (`indent=2`). Retourne le nombre de lignes de données exportées.
 
 ## Contraintes
 
