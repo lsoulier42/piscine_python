@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Une interface d'administration peut contenir des comptes actifs et désactivés. Tu veux afficher seulement les noms des comptes actifs, dans l'ordre où ils ont été reçus, sans modifier les données de départ.
+
 ## Objectif
 
 `active_names(users: list[dict]) -> list[str]` : noms des utilisateurs actifs dans l'ordre ; aucune mutation.
