@@ -12,7 +12,7 @@ Les mots-clés associés à un article arrivent parfois avec des doublons, des e
 
 ## Objectif
 
-`normalize_tags(tags: list[str]) -> list[str]` : trim, minuscules, retirer les vides, dédoublonner en gardant l'ordre.
+Implémente `normalize_tags(tags: list[str]) -> list[str]`. La fonction reçoit une liste de mots-clés. Pour chacun, retire les espaces de début et de fin et transforme les lettres en minuscules. Ignore les valeurs devenues vides et les doublons. Retourne une liste contenant les tags conservés dans leur ordre de première apparition.
 
 ## Contraintes
 
