@@ -6,6 +6,10 @@
 | Version | Python 3.15 |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Un petit programme interactif reçoit des commandes textuelles comme « help », « status » ou « quit ». Tu vas écrire le répartiteur qui associe à chaque commande une réponse, y compris lorsqu'un utilisateur saisit une commande inconnue.
+
 ## Objectif
 
 `route(command: str) -> str` avec match ; help -> Available: help, status, quit ; status -> OK ; quit -> Bye ; sinon Unknown command ; ignorer casse et blancs.
