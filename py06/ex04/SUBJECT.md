@@ -6,6 +6,10 @@
 | Version | Python 3.15 |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Pour auditer rapidement un projet Python, tu veux connaître le nombre de lignes non vides de chaque fichier source et le total du projet. Tu vas créer un outil en ligne de commande qui explore un dossier et produit ce bilan en ignorant les répertoires techniques.
+
 ## Objectif
 
 CLI `python audit.py PATH` : parcourir *.py récursivement, lignes non vides par fichier trié par chemin relatif, TOTAL: N, exclure .venv et __pycache__.
