@@ -12,7 +12,7 @@ Dans une liste d'étiquettes ou de noms, certaines valeurs peuvent apparaître p
 
 ## Objectif
 
-`unique_in_order(items: list[str]) -> list[str]` : dédoublonner en conservant l'ordre de première apparition.
+Implémente `unique_in_order(items: list[str]) -> list[str]`. La fonction reçoit une liste de chaînes pouvant contenir des doublons. Retourne une nouvelle liste dans laquelle chaque valeur n'apparaît qu'une seule fois, à la position de sa première apparition dans la liste d'origine.
 
 ## Contraintes
 
