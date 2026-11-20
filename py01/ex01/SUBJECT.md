@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Pour analyser un message ou un commentaire, on peut commencer par compter combien de fois chaque mot apparaît. Tu vas produire un récapitulatif des occurrences, sans distinguer les majuscules et les minuscules.
+
 ## Objectif
 
 `word_counts(text: str) -> dict[str, int]` : séparer les espaces, ignorer les mots vides et la casse ; garder la ponctuation.
