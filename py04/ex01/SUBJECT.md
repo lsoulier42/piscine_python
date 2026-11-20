@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Pour simuler un compte bancaire, il ne suffit pas de stocker un solde : il faut aussi encadrer les dépôts et les retraits afin d'empêcher les opérations invalides. Tu vas créer un objet qui protège son état et expose des opérations contrôlées.
+
 ## Objectif
 
 Créer `BankAccount(owner: str, balance_cents: int=0)` ; deposit/withdraw pour montants > 0, pas de découvert, ValueError sinon ; balance lisible mais non assignable.
