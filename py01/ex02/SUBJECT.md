@@ -12,7 +12,7 @@ Un magasin possède deux inventaires, par exemple ceux de deux entrepôts. Chaqu
 
 ## Objectif
 
-`merge_stock(a: dict[str,int], b: dict[str,int]) -> dict[str,int]` : additionner par référence, conserver les zéros, ne pas muter a ou b.
+Implémente `merge_stock(a: dict[str, int], b: dict[str, int]) -> dict[str, int]`. Chaque dictionnaire associe une référence de produit à sa quantité en stock. Retourne un nouveau dictionnaire contenant toutes les références présentes dans `a` ou `b`, en additionnant leurs quantités quand elles apparaissent dans les deux inventaires. Conserve les références dont la quantité vaut zéro et ne modifie aucun des dictionnaires d'origine.
 
 ## Contraintes
 
