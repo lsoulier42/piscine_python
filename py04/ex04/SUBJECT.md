@@ -12,7 +12,7 @@ Ton repository peut maintenant contenir plusieurs utilisateurs. Pour sauvegarder
 
 ## Objectif
 
-`export_users(repo: UserRepository, path: str) -> int` : JSON UTF-8 de dictionnaires id/email/active, retourne le nombre exporté.
+Implémente `export_users(repo: UserRepository, path: str) -> int`. La fonction reçoit un repository d'utilisateurs et le chemin d'un fichier de sortie. Écris dans ce fichier un tableau JSON en UTF-8 : chaque utilisateur doit être représenté par un dictionnaire contenant `id`, `email` et `active`. Retourne le nombre d'utilisateurs exportés.
 
 ## Contraintes
 
