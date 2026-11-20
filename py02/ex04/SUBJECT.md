@@ -12,7 +12,7 @@ Tu viens de développer une fonction de validation des utilisateurs. Comment vé
 
 ## Objectif
 
-Créer au moins 8 tests unittest pour `validate_user` : nominal, espaces, clés manquantes, bool, minorité, email sans/double @, mauvais types.
+Crée un fichier `test_validation.py` contenant au moins huit tests automatisés avec `unittest` pour la fonction `validate_user` de l'exercice précédent. Vérifie qu'elle accepte un utilisateur valide, normalise correctement les espaces, et rejette les entrées incorrectes. Tes tests doivent notamment couvrir les clés manquantes, un âge booléen, un utilisateur mineur, un e-mail sans `@` ou avec plusieurs `@`, ainsi que les mauvais types de données.
 
 ## Contraintes
 
