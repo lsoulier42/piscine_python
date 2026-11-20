@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Une application de facturation doit calculer le montant TTC d'un ensemble de prix. Pour éviter les imprécisions des nombres décimaux, les montants sont représentés en centimes. Tu vas calculer un total avec taxe et un arrondi adapté aux montants monétaires.
+
 ## Objectif
 
 Écrire `total_with_tax(prices: list[int], tax_percent: int) -> int` ; centimes, arrondi au centime, demi vers le haut, ValueError pour prix ou taux négatifs.
