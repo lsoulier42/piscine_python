@@ -12,7 +12,7 @@ Un outil de documentation ou d'analyse peut avoir besoin d'afficher quelques sta
 
 ## Objectif
 
-`line_stats(path: str) -> dict[str,int]` : lire UTF-8 ; clés lines = len(splitlines()), words = len(split()), characters = len(text), sauts inclus.
+Implémente `line_stats(path: str) -> dict[str, int]`. La fonction doit lire le fichier texte situé à `path` en UTF-8 et retourner un dictionnaire avec trois statistiques : `lines` pour le nombre de lignes (selon `splitlines()`), `words` pour le nombre de mots (selon `split()`) et `characters` pour le nombre total de caractères, sauts de ligne compris.
 
 ## Contraintes
 
