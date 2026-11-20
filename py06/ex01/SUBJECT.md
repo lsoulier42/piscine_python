@@ -12,7 +12,7 @@ Un petit programme interactif reçoit des commandes textuelles comme « help »,
 
 ## Objectif
 
-`route(command: str) -> str` avec match ; help -> Available: help, status, quit ; status -> OK ; quit -> Bye ; sinon Unknown command ; ignorer casse et blancs.
+Implémente `route(command: str) -> str` en utilisant `match`. La fonction reçoit une commande textuelle et retourne la réponse correspondante : `help` donne `Available: help, status, quit`, `status` donne `OK` et `quit` donne `Bye`. Pour toute autre commande, retourne `Unknown command`. Les espaces en début ou fin de commande et les différences de casse ne doivent pas influencer le résultat.
 
 ## Contraintes
 
