@@ -12,7 +12,9 @@ Dans une application web, on a régulièrement besoin de construire des URL cont
 
 ## Objectif
 
-`make_url(base: str, **params: str) -> str` : encoder via urllib.parse.urlencode, ordre d'entrée, ? ou & selon base ; sans paramètre renvoyer base.
+Implémente `make_url(base: str, **params: str) -> str`. La fonction reçoit une URL de départ et des paramètres nommés à ajouter dans sa chaîne de requête. Encode les noms et valeurs avec `urllib.parse.urlencode`, en conservant l'ordre dans lequel les paramètres ont été fournis. Ajoute `?` si l'URL ne contient pas encore de chaîne de requête, sinon ajoute `&`. Si aucun paramètre n'est fourni, retourne l'URL de départ sans la modifier.
+
+Par exemple, `make_url('/search', q='chat noir', page='2')` doit retourner `'/search?q=chat+noir&page=2'`.
 
 ## Contraintes
 
