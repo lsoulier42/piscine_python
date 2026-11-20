@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Pendant le débogage ou l'observation d'une application, il peut être utile de savoir combien de fois une fonction est appelée. Tu vas construire un mécanisme réutilisable qui ajoute ce compteur à une fonction sans modifier son comportement initial : c'est l'occasion de découvrir les décorateurs.
+
 ## Objectif
 
 Créer `@count_calls` : attribut `.calls` initialisé à 0 et incrémenté à chaque appel, valeur de retour et nom de fonction préservés.
