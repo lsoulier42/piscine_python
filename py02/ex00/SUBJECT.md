@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Dans une application, les informations saisies par les utilisateurs arrivent souvent sous forme de texte, même lorsqu'elles représentent des nombres. Avant de les utiliser, il faut pouvoir les convertir en entiers et refuser les valeurs mal formées. Tu vas créer une fonction qui effectue cette conversion de manière fiable.
+
 ## Objectif
 
 Implémenter `parse_positive_int(text: str) -> int`, qui convertit une chaîne représentant un entier positif ou nul en `int`.
