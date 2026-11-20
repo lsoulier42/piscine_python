@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Ton repository peut maintenant contenir plusieurs utilisateurs. Pour sauvegarder ou transmettre ces données à une autre application, tu vas exporter la liste des utilisateurs vers un fichier JSON. Cet exercice réutilise les composants construits précédemment.
+
 ## Objectif
 
 `export_users(repo: UserRepository, path: str) -> int` : JSON UTF-8 de dictionnaires id/email/active, retourne le nombre exporté.
