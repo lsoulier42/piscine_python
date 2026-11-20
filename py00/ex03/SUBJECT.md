@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+FizzBuzz est un petit jeu de comptage utilisé pour s'entraîner aux conditions et aux boucles. On énumère les nombres dans l'ordre, mais certains sont remplacés par un mot selon leur divisibilité : l'objectif est de générer toute cette séquence.
+
 ## Objectif
 
 Écrire `fizzbuzz(n: int) -> list[str]` pour 1..n ; multiples de 3 : Fizz, 5 : Buzz, 15 : FizzBuzz, sinon nombre converti en str ; n <= 0 : []
