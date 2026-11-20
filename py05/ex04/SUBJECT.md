@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Quand on traite de nombreux enregistrements utilisateurs, on ne veut pas forcément constituer une seconde grande liste en mémoire. Tu vas construire un traitement progressif qui ignore les utilisateurs inactifs et fournit les noms valides et normalisés un à un.
+
 ## Objectif
 
 `process_records(records)` : générateur sur dictionnaires name/active ; produire noms normalisés non vides des actifs, sans liste complète.
