@@ -12,7 +12,7 @@ Pour simuler un compte bancaire, il ne suffit pas de stocker un solde : il faut 
 
 ## Objectif
 
-Créer `BankAccount(owner: str, balance_cents: int=0)` ; deposit/withdraw pour montants > 0, pas de découvert, ValueError sinon ; balance lisible mais non assignable.
+Crée une classe `BankAccount` qui représente un compte bancaire avec un propriétaire (`owner: str`) et un solde en centimes (`balance_cents: int`), initialisé à `0` par défaut. Ajoute des opérations `deposit` (dépôt) et `withdraw` (retrait). Chaque montant doit être strictement positif, et un retrait ne peut pas rendre le solde négatif : lève `ValueError` dans ces situations. Le solde doit pouvoir être consulté, mais pas modifié directement par assignation.
 
 ## Contraintes
 
