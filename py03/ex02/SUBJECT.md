@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Un service reçoit des données sous forme de tableau CSV, alors qu'une autre application attend un fichier JSON. Tu vas créer un petit convertisseur qui lit les lignes du CSV, les transforme en objets et écrit le résultat dans un nouveau fichier.
+
 ## Objectif
 
 `csv_to_json(csv_path: str, json_path: str) -> int` : csv.DictReader, tableau d'objets JSON UTF-8 ensure_ascii=False indent=2, renvoyer nombre de lignes.
