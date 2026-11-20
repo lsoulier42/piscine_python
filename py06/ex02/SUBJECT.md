@@ -6,6 +6,10 @@
 | Version | Python 3.15 |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Une configuration partagée entre plusieurs parties d'une application ne doit pas pouvoir être modifiée accidentellement. Tu vas fabriquer une copie immuable d'un dictionnaire de paramètres, indépendante des changements ultérieurs de la source.
+
 ## Objectif
 
 `freeze_config(config: dict[str,str])` retourne une copie frozendict (Python 3.15) ; immuable et indépendante du dict source.
