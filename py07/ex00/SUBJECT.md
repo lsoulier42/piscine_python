@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Tu travailles sur un export de ventes provenant d'une application métier. Le fichier CSV contient des transactions, mais toutes ne correspondent pas à des paiements confirmés. Tu vas construire un petit pipeline ETL qui lit ces données, écarte les transactions non payées, vérifie les montants et produit un bilan JSON agrégé par client. Ce mini-projet rassemble les notions de fichiers, de validation, de collections, de CLI et de tests abordées les jours précédents.
+
 ## Objectif
 
 CLI `python etl.py INPUT_CSV OUTPUT_JSON` : CSV date/customer/amount_cents/status, ignorer status != paid, refuser montants invalides ou négatifs, agréger par client, trier, JSON customers + grand_total_cents ; pas de sortie si erreur, stderr/code non nul ; cinq tests et README.
