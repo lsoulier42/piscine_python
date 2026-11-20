@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Certains traitements doivent s'exécuter temporairement dans un répertoire donné, puis revenir automatiquement au répertoire de départ. Tu vas créer un mécanisme qui encadre ce changement de contexte et garantit le retour à la situation initiale, même si le traitement échoue.
+
 ## Objectif
 
 Créer `temporary_directory(path)` avec contextlib.contextmanager ; basculer cwd et restaurer même en cas d'exception.
