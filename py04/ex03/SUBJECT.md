@@ -12,7 +12,7 @@ Après avoir créé une entité `User`, tu veux pouvoir gérer plusieurs utilisa
 
 ## Objectif
 
-Créer `UserRepository` avec add, get(id) -> User | None, all() -> list[User], delete(id) -> bool ; doublons ValueError ; ordre d'insertion.
+Crée une classe `UserRepository` pour conserver des objets `User` en mémoire. Elle doit permettre d'ajouter un utilisateur (`add`), de rechercher un utilisateur par identifiant (`get(id)`), de récupérer tous les utilisateurs (`all()`) et d'en supprimer un (`delete(id)`). `get` retourne l'utilisateur trouvé ou `None`. `all` retourne une liste dans l'ordre d'insertion. `delete` retourne un booléen indiquant si une suppression a eu lieu. L'ajout d'un identifiant déjà présent doit lever `ValueError`.
 
 ## Contraintes
 
