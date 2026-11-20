@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Un programme lancé depuis un terminal peut recevoir des informations après son nom : ce sont ses arguments de ligne de commande. Tu vas créer un petit outil qui affiche ces arguments dans l'ordre, afin de comprendre comment un script récupère les informations qu'on lui transmet.
+
 ## Objectif
 
 Afficher chaque argument CLI au format `index: valeur`, dès 0 ; aucun argument : `No arguments`.
