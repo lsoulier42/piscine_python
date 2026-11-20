@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Dans un blog ou un catalogue, on transforme souvent un titre lisible en identifiant court utilisable dans une URL. Tu vas écrire une fonction qui rend une expression plus régulière en uniformisant les espaces et les majuscules, sans chercher à supprimer les accents.
+
 ## Objectif
 
 Écrire `slugify(text: str) -> str` : strip, minuscules, remplacer chaque suite d'espaces par `-`, préserver les accents.
