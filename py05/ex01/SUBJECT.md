@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Une application peut devoir traiter une longue liste de résultats par petits groupes, par exemple pour les envoyer à une API ou les afficher progressivement. Tu vas créer un outil qui fournit ces groupes les uns après les autres, sans préparer toute la liste des groupes à l'avance.
+
 ## Objectif
 
 `chunks(items: list, size: int)` : générateur de listes de taille <= size, size <= 0 -> ValueError, sans construire tous les groupes.
