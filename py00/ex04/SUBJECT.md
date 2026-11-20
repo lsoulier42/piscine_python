@@ -12,7 +12,7 @@ Une application de facturation doit calculer le montant TTC d'un ensemble de pri
 
 ## Objectif
 
-Écrire `total_with_tax(prices: list[int], tax_percent: int) -> int` ; centimes, arrondi au centime, demi vers le haut, ValueError pour prix ou taux négatifs.
+Implémente `total_with_tax(prices: list[int], tax_percent: int) -> int`. La fonction reçoit une liste de prix exprimés en centimes et un taux de taxe exprimé en pourcentage. Elle doit retourner le montant total TTC en centimes, avec un arrondi au centime le plus proche et les demi-centimes arrondis vers le haut. Si un prix ou le taux est négatif, lève `ValueError`.
 
 ## Contraintes
 
