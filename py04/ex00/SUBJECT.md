@@ -12,7 +12,7 @@ Dans une application, un utilisateur possède plusieurs informations qui vont en
 
 ## Objectif
 
-Créer une `@dataclass User` avec id:int, email:str et active:bool=True ; égalité par valeur.
+Crée une classe `User` avec `@dataclass`. Chaque utilisateur possède un identifiant `id` de type `int`, un e-mail `email` de type `str` et un indicateur `active` de type `bool`, qui vaut `True` par défaut. Deux instances ayant les mêmes valeurs de champs doivent être considérées comme égales.
 
 ## Contraintes
 
