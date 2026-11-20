@@ -19,6 +19,10 @@ Chaque ligne possède trois champs :
 
 Le prix d'une ligne est `quantity * unit_price`. Pas besoin de convertir en euros ou d'utiliser des flottants.
 
+## Contexte et finalité
+
+Un panier de commande peut contenir plusieurs lignes correspondant au même produit. Avant d'afficher le récapitulatif, il faut calculer le montant global et regrouper les quantités par référence. Tu vas construire ce résumé à partir des lignes du panier.
+
 ## Objectif
 
 Écris `summarize_cart(items: list[dict]) -> dict`.
