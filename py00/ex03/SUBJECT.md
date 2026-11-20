@@ -12,7 +12,7 @@ FizzBuzz est un petit jeu de comptage utilisé pour s'entraîner aux conditions 
 
 ## Objectif
 
-Écrire `fizzbuzz(n: int) -> list[str]` pour 1..n ; multiples de 3 : Fizz, 5 : Buzz, 15 : FizzBuzz, sinon nombre converti en str ; n <= 0 : []
+Implémente `fizzbuzz(n: int) -> list[str]`. La fonction doit produire une liste de chaînes représentant les nombres de `1` à `n`, dans l'ordre. Remplace les multiples de `3` par `Fizz`, ceux de `5` par `Buzz` et ceux de `3` et `5` par `FizzBuzz`. Pour les autres nombres, utilise leur représentation en chaîne. Si `n` est inférieur ou égal à `0`, retourne une liste vide.
 
 ## Contraintes
 
