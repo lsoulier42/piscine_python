@@ -12,7 +12,7 @@ Certains traitements doivent s'exécuter temporairement dans un répertoire donn
 
 ## Objectif
 
-Créer `temporary_directory(path)` avec contextlib.contextmanager ; basculer cwd et restaurer même en cas d'exception.
+Crée `temporary_directory(path)` à l'aide de `contextlib.contextmanager`. Le contexte doit changer temporairement le répertoire de travail courant pour celui indiqué par `path`. À sa sortie, il doit toujours rétablir le répertoire précédent, y compris lorsque le code exécuté dans ce contexte lève une exception.
 
 ## Contraintes
 
