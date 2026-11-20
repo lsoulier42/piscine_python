@@ -12,7 +12,7 @@ Une application manipule des objets `User` en mémoire, mais doit parfois transm
 
 ## Objectif
 
-Créer `user_to_dict(user: User) -> dict` et `user_from_dict(payload: dict) -> User` ; champs inconnus ignorés, entrée inchangée, ValueError si types invalides.
+Implémente `user_to_dict(user: User) -> dict` et `user_from_dict(payload: dict) -> User`. La première fonction transforme un objet `User` en dictionnaire contenant ses données. La seconde reconstruit un objet `User` depuis un dictionnaire. Ignore les champs inconnus du dictionnaire reçu, ne modifie pas ce dictionnaire et lève `ValueError` si les types des données attendues ne sont pas valides.
 
 ## Contraintes
 
