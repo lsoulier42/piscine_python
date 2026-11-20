@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Les mots-clés associés à un article arrivent parfois avec des doublons, des espaces inutiles et des variations de casse. Avant de les enregistrer ou de les afficher, tu veux obtenir une liste propre et stable de tags.
+
 ## Objectif
 
 `normalize_tags(tags: list[str]) -> list[str]` : trim, minuscules, retirer les vides, dédoublonner en gardant l'ordre.
