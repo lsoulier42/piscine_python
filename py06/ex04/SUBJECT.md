@@ -12,7 +12,7 @@ Pour auditer rapidement un projet Python, tu veux connaître le nombre de lignes
 
 ## Objectif
 
-CLI `python audit.py PATH` : parcourir *.py récursivement, lignes non vides par fichier trié par chemin relatif, TOTAL: N, exclure .venv et __pycache__.
+Crée un programme `audit.py` qui s'exécute avec `python audit.py PATH`. Il doit explorer récursivement le dossier fourni, repérer les fichiers `*.py` et compter, pour chacun, les lignes non vides. Affiche les résultats triés par chemin relatif, puis une dernière ligne au format `TOTAL: N` avec la somme des lignes non vides. Ignore les dossiers `.venv` et `__pycache__`.
 
 ## Contraintes
 
