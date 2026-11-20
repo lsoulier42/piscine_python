@@ -12,7 +12,7 @@ Dans un fichier de logs, les messages d'information, d'avertissement et d'erreur
 
 ## Objectif
 
-`error_lines(path: str) -> list[str]` : les lignes commençant par `[ERROR]`, sans saut de ligne final, ordre préservé.
+Implémente `error_lines(path: str) -> list[str]`. La fonction lit un fichier de logs et retourne les lignes qui commencent exactement par `[ERROR]`. Conserve leur ordre d'apparition et leur contenu, mais retire leur saut de ligne final.
 
 ## Contraintes
 
