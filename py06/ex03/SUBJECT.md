@@ -12,7 +12,7 @@ Dans une configuration, une clé absente ne signifie pas la même chose qu'une c
 
 ## Objectif
 
-Créer MISSING avec `sentinel` (Python 3.15), `get_setting(mapping: dict, key: str, default=MISSING)` ; valeur même None si clé présente, défaut si absent et fourni, sinon KeyError.
+Crée une valeur sentinelle `MISSING` avec `sentinel` de Python 3.15, puis implémente `get_setting(mapping: dict, key: str, default=MISSING)`. Si la clé existe dans le dictionnaire, retourne sa valeur, même lorsqu'elle vaut `None`. Si la clé est absente et qu'un argument `default` a été fourni, retourne ce défaut. Si la clé est absente et qu'aucun défaut n'a été fourni, lève `KeyError`.
 
 ## Contraintes
 
