@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Le convertisseur CSV vers JSON de l'exercice précédent fonctionne comme une fonction Python. Tu vas maintenant en faire un outil utilisable directement dans un terminal : on lui fournit les chemins d'entrée et de sortie, et il indique si l'export a réussi ou échoué.
+
 ## Objectif
 
 `python cli.py INPUT OUTPUT` : convertir CSV->JSON via ex02, imprimer `Exported N rows`, code 0 ; erreurs en stderr et code non nul.
