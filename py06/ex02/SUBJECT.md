@@ -12,7 +12,7 @@ Une configuration partagée entre plusieurs parties d'une application ne doit pa
 
 ## Objectif
 
-`freeze_config(config: dict[str,str])` retourne une copie frozendict (Python 3.15) ; immuable et indépendante du dict source.
+Implémente `freeze_config(config: dict[str, str])`. La fonction reçoit un dictionnaire de configuration et doit en retourner une copie immuable, en utilisant `frozendict` de Python 3.15. Le résultat doit rester indépendant du dictionnaire d'origine, même si celui-ci est modifié ensuite.
 
 ## Contraintes
 
