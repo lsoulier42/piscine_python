@@ -12,7 +12,7 @@ Une boutique reçoit des lignes de commande contenant une référence produit, u
 
 ## Objectif
 
-`total_order(lines: list[tuple[str,int,int]]) -> int` : tuples sku, quantité > 0, prix unitaire >= 0 en centimes ; ValueError sinon, annotations complètes.
+Implémente `total_order(lines: list[tuple[str, int, int]]) -> int`. Chaque tuple représente une ligne de commande avec la référence du produit (`sku`), sa quantité et son prix unitaire en centimes. Calcule et retourne le montant total de la commande en centimes. Chaque quantité doit être strictement positive et chaque prix unitaire positif ou nul ; sinon, lève `ValueError`. Fournis des annotations de types complètes.
 
 ## Contraintes
 
