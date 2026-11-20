@@ -12,7 +12,7 @@ Une interface d'administration peut contenir des comptes actifs et désactivés.
 
 ## Objectif
 
-`active_names(users: list[dict]) -> list[str]` : noms des utilisateurs actifs dans l'ordre ; aucune mutation.
+Implémente `active_names(users: list[dict]) -> list[str]`. La fonction reçoit une liste de dictionnaires représentant des utilisateurs. Retourne les noms des utilisateurs actifs, dans le même ordre que dans la liste d'origine. Ne modifie pas les dictionnaires ni la liste reçus.
 
 ## Contraintes
 
