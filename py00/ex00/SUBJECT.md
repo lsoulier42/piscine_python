@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Tu découvres un nouveau langage et tu veux vérifier que ton environnement exécute correctement un script Python. Comme pour un premier « Hello World » en PHP, ce programme sert à afficher un résultat prévisible dans le terminal.
+
 ## Objectif
 
 Afficher exactement deux lignes : `Hello, Python!` et `PHP -> Python`.
