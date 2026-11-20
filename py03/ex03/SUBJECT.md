@@ -6,6 +6,10 @@
 | Version | Python 3.15 (compatible 3.11+ hors nouveautés) |
 | Dépendances | Bibliothèque standard uniquement |
 
+## Contexte et finalité
+
+Dans un fichier de logs, les messages d'information, d'avertissement et d'erreur sont mélangés. Pour faciliter le diagnostic, tu veux extraire uniquement les lignes signalant des erreurs, dans leur ordre d'apparition.
+
 ## Objectif
 
 `error_lines(path: str) -> list[str]` : les lignes commençant par `[ERROR]`, sans saut de ligne final, ordre préservé.
